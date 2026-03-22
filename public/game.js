@@ -21,7 +21,8 @@ function init() {
   renderer.setSize(window.innerWidth, window.innerHeight);
 
   // Pointer Lock Controls (Ego-Perspektive)
-  controls = new THREE.PointerLockControls(camera, document.body);
+controls = new PointerLockControls(camera, document.body);
+
 
   document.body.addEventListener("click", () => {
     controls.lock();
